@@ -3,10 +3,16 @@ PROJECT:
 
 NEXT UP:
 - Research project paramaters
-- Figure out tech stack
-- Finish this tutorial (currently at 17:20 mark) https://www.youtube.com/watch?v=xfzGZB4HhEE
+- Finish this tutorial (currently at 1:38:42 mark) https://www.youtube.com/watch?v=xfzGZB4HhEE
 
 LOG:
+--- October 6th, 2021 ---
+- Finished the first algorithmic trading project 'Building an Equal-Weight S&P 500 Index Fund'.
+- Translated (copy pasted) it in to a regular python script.
+
+--- October 5th, 2021 ---
+- Installed Jupyter, requests, xlsxwriter (Numpy + Pandas previously installed)
+
 --- October 4th, 2021 ---
 - Abandoned datacamp course for now because there are too many paid links. Found a Freecodecamp tutorial on youtube that seems suitable and practical.
 
