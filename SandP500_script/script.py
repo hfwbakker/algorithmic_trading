@@ -4,14 +4,18 @@ import requests
 import xlsxwriter
 import math
 
+print("Attempting to reading sp_500_stocks.csv...")
 stocks = pd.read_csv('sp_500_stocks.csv')
 
+print("Importing IEX Cloud API Token...")
 from secrets import IEX_CLOUD_API_TOKEN
 
+print("Connecting to API....")
 symbol = 'AAPL'
 api_url = f'https://sandbox.iexapis.com/stable/stock/{symbol}/quote/?token={IEX_CLOUD_API_TOKEN}'
 data = requests.get(api_url).json()
 
+print("Creating Pandas DataFrame...")
 price = data['latestPrice']
 market_cap = data['marketCap']
 
@@ -37,6 +41,7 @@ def chunks(lst, n):
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
 
+print("Populating DataFrame with requested data...")
 symbol_groups = list(chunks(stocks['Ticker'], 100))
 symbol_strings = []
 for i in range(0, len(symbol_groups)):
@@ -59,6 +64,7 @@ for symbol_string in symbol_strings:
         )
 final_dataframe
 
+print("Requesting user input...")
 portfolio_size = input('Enter the value of your portfolio:')
 
 try:
@@ -69,10 +75,12 @@ except ValueError:
     portfolio_size = input('Enter the value of your portfolio:')
     val = float(portfolio_size)
 
+print("Calculating stocks to buy...")
 position_size = val/len(final_dataframe.index)
 for i in range(0, len(final_dataframe.index)):
     final_dataframe.loc[i, 'Number of Shares to Buy'] = math.floor(position_size/final_dataframe.loc[i, 'Stock Price'])
 
+print("Formatting and writing to Excel sheet...")
 writer = pd.ExcelWriter('recommended_trades.xlsx', engine='xlsxwriter')
 final_dataframe.to_excel(writer, sheet_name='Recommended Trades', index = False)
 
@@ -121,4 +129,7 @@ for column in column_formats.keys():
     writer.sheets['Recommended Trades'].set_column(f'{column}:{column}', 18, column_formats[column][1])
     writer.sheets['Recommended Trades'].write(f'{column}1', column_formats[column][0], string_format)
 
+print("Saving to Excel sheet...")
 writer.save()
+
+print("DONE!")
