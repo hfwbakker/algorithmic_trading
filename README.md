@@ -4,11 +4,17 @@ PROJECT:
 NEXT UP:
 - Research project paramaters
 - Finish this tutorial (currently at 1:38:42 mark) https://www.youtube.com/watch?v=xfzGZB4HhEE
+- Finish the 2nd algorithmic trading project now that the script seems to work with my fixes.
 
 LOG:
+--- October 8th, 2021 ---
+- Found out that several values in the dataframe returned NoneType, likely causing the error.
+- Used 'hqm_dataframe = hqm_dataframe.fillna(value=np.nan)' to populate NoneType values with NaN (which is a float???).
+
 --- October 7th, 2021 ---
 - Installed scipy
 - Started running in to the same Pandas error as I experienced in investment_updater app, where pandas threw a "TypeError: '<' not supported between instances of 'NoneType' and 'float'" error. SOLUTION ATTEMPTED: installed a bunch of earlier versions of libraries used (most importantly pandas 0.25.3).
+- Solution didn't work. Error persists regardless of versions, IDE, OS, etc.
 
 --- October 6th, 2021 ---
 - Finished the first algorithmic trading project 'Building an Equal-Weight S&P 500 Index Fund'.

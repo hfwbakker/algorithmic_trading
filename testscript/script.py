@@ -144,7 +144,8 @@ for symbol_string in symbol_strings:
                                                   index = hqm_columns), 
                                         ignore_index = True)
         
-hqm_dataframe.columns
+print(hqm_dataframe.columns)
+print(hqm_dataframe)
 
 print("here we go, this is error zone.")
 input("any key to continue")
@@ -170,9 +171,12 @@ for time_period in time_periods:
 #Print the entire DataFrame    
 hqm_dataframe
 
+
+
 print("if you made it here then wow you fixed one problem ")
 input("any key to continue")
 
+'''
 
 from statistics import mean
 
@@ -257,3 +261,5 @@ for column in column_formats.keys():
     writer.sheets['Momentum Strategy'].write(f'{column}1', column_formats[column][0], string_template)
 
 writer.save()
+
+'''
