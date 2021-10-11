@@ -1,5 +1,7 @@
 PROJECT:
-
+- Create an S&P stock picker.
+- Try to implement DD rules.
+- Make it output an Excel sheet with which shares to buy.
 
 NEXT UP:
 - Research project paramaters
