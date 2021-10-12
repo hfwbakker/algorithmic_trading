@@ -1,14 +1,17 @@
 PROJECT:
-- Create an S&P stock picker.
+- Create a stock picker (start with S&P500?)
 - Try to implement DD rules.
 - Make it output an Excel sheet with which shares to buy.
+- Beth Kindig (Kindrig?) standards stock picker.
 
 NEXT UP:
-- Research project paramaters
-- Finish this tutorial (currently at 1:38:42 mark) https://www.youtube.com/watch?v=xfzGZB4HhEE
-- Finish the 2nd algorithmic trading project now that the script seems to work with my fixes.
+- Research Kindig method.
 
 LOG:
+--- October 12th, 2021 ---
+- Finished the algorithmic trading course.
+- Defined the outlines of the project.
+
 --- October 8th, 2021 ---
 - Found out that several values in the dataframe returned NoneType, likely causing the error.
 - Used 'hqm_dataframe = hqm_dataframe.fillna(value=np.nan)' to populate NoneType values with NaN (which is a float???).
