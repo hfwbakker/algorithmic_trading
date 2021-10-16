@@ -3,11 +3,17 @@ PROJECT:
 - Try to implement DD rules.
 - Make it output an Excel sheet with which shares to buy.
 - Beth Kindig (Kindrig?) standards stock picker.
+- Kindig criteria: 
+    "Ze koopt geen groeiaandelen die minder dan 30% omzetgroei laten zien. Voor aandelen die een groei vertonen van meer dan 30% maar minder dan 40% betaalt ze niet meer dan 10 x sales (PS=10). Idem voor een groei tussen 40% en 55% betaalt ze maximaal 20 x sales en bij een grotere groei nooit meer dan 30 x sales." 
 
 NEXT UP:
 - Research Kindig method.
 
 LOG:
+--- October 16h, 2021---
+- Created hentrading folder + script.py for my take on a stock picker script.
+- Wrote the core formula for picking stocks according to the Kindig criteria.
+
 --- October 12th, 2021 ---
 - Finished the algorithmic trading course.
 - Defined the outlines of the project.
