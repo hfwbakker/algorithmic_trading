@@ -11,7 +11,7 @@ NEXT UP:
 
 LOG:
 --- October 19th, 2021---
-- Added sklearn and keras to venv.
+- Added sklearn, keras, tensorflow to venv.
 
 --- October 16th, 2021---
 - Created hentrading folder + script.py for my take on a stock picker script.
