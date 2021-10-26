@@ -7,13 +7,16 @@ PROJECT:
     "Ze koopt geen groeiaandelen die minder dan 30% omzetgroei laten zien. Voor aandelen die een groei vertonen van meer dan 30% maar minder dan 40% betaalt ze niet meer dan 10 x sales (PS=10). Idem voor een groei tussen 40% en 55% betaalt ze maximaal 20 x sales en bij een grotere groei nooit meer dan 30 x sales." 
 
 NEXT UP:
-- Research Kindig method.
+- Find out if I can download the relevant data from Yahoo Finance in bulk.
 
 LOG:
---- October 19th, 2021---
+--- October 26th, 2021 ---
+- Created notebook with logic for kindig method, including logic that can pick out stocks that qualify.
+
+--- October 19th, 2021 ---
 - Added sklearn, keras, tensorflow to venv.
 
---- October 16th, 2021---
+--- October 16th, 2021 ---
 - Created hentrading folder + script.py for my take on a stock picker script.
 - Wrote the core formula for picking stocks according to the Kindig criteria.
 
