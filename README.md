@@ -10,6 +10,9 @@ NEXT UP:
 - Find out if I can download the relevant data from Yahoo Finance in bulk.
 
 LOG:
+--- October 27th, 2021 ---
+- Started using yfinance and created logic to export data from it.
+
 --- October 26th, 2021 ---
 - Created notebook with logic for kindig method, including logic that can pick out stocks that qualify.
 
