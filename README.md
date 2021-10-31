@@ -10,6 +10,11 @@ NEXT UP:
 - Find out if I can download the relevant data from Yahoo Finance in bulk.
 
 LOG:
+--- October 30th, 2021 ---
+- Wrote the logic that gets data from yfinance, puts it in a dataframe, and checks which stocks fulfill the kindig criteria.
+- Included xlsxwriter to create formatted excel files.
+- Ran into an issue where I could not get the script to overwrite an old/existing file. The problem was that since I am using Jupyter Notebook code is ran in snippets and I reran the writer.save() function without rerunning the pd.ExcelWriter() and df.to_excel() functions.
+
 --- October 27th, 2021 ---
 - Started using yfinance and created logic to export data from it.
 
